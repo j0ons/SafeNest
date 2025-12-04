@@ -2,14 +2,14 @@
 
 **Version:** 1.0.0
 **Author:** SafeNest Security Team
-**Status:** ✅ Tested and Verified on Raspberry Pi OS
+**Status:** Tested and Verified on Raspberry Pi OS
 **License:** MIT (Educational/Research Use)
 
 SafeNest is a **local-only** smart home security framework designed for Raspberry Pi. It provides enterprise-grade security features for IoT devices without relying on cloud services, ensuring complete privacy and control.
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -33,12 +33,12 @@ SafeNest is a **local-only** smart home security framework designed for Raspberr
 
 SafeNest transforms a Raspberry Pi into a comprehensive smart home security gateway:
 
-✅ **Secure MQTT Broker** with TLS 1.2+ encryption
-✅ **Real-time Anomaly Detection** (IDS) detecting DoS attacks in <5 seconds
-✅ **Automatic Threat Response** with iptables-based IP blocking
-✅ **Topic-Level Access Control** enforcing least privilege
-✅ **Web Dashboard** for real-time monitoring
-✅ **Structured JSON Logging** for security analysis
+**Secure MQTT Broker** with TLS 1.2+ encryption
+**Real-time Anomaly Detection** (IDS) detecting DoS attacks in <5 seconds
+**Automatic Threat Response** with iptables-based IP blocking
+**Topic-Level Access Control** enforcing least privilege
+**Web Dashboard** for real-time monitoring
+**Structured JSON Logging** for security analysis
 
 **Key Principle:** 100% local operation. Zero cloud dependencies. Complete privacy.
 
@@ -50,13 +50,13 @@ SafeNest transforms a Raspberry Pi into a comprehensive smart home security gate
 
 | Layer | Implementation | Status |
 |-------|---------------|--------|
-| **Encryption** | TLS 1.2+ for all MQTT traffic | ✅ Verified |
-| **Authentication** | Username/password per device | ✅ Verified |
-| **Authorization** | Topic-based ACLs | ✅ Verified |
-| **Firewall** | iptables with rate limiting | ✅ Verified |
-| **Anomaly Detection** | Real-time IDS (DoS, ACL violations) | ✅ Verified |
-| **Auto-Response** | IP blocking via log watcher | ✅ Verified |
-| **Monitoring** | Web dashboard + JSON logs | ✅ Verified |
+| **Encryption** | TLS 1.2+ for all MQTT traffic | Verified |
+| **Authentication** | Username/password per device | Verified |
+| **Authorization** | Topic-based ACLs | Verified |
+| **Firewall** | iptables with rate limiting | Verified |
+| **Anomaly Detection** | Real-time IDS (DoS, ACL violations) | Verified |
+| **Auto-Response** | IP blocking via log watcher | Verified |
+| **Monitoring** | Web dashboard + JSON logs | Verified |
 
 ### Supported Devices
 
@@ -81,7 +81,7 @@ These components are PRODUCTION-READY and work with actual network traffic:
 ✅ **Firewall Rules** - Active iptables filtering (`scripts/setup_iptables.sh`)
 ✅ **Controller Service** - MQTT message routing and automation (`src/safenest_controller.py`)
 
-**Status:** ✅ These components are REAL and protect actual communication
+**Status:** These components are REAL and protect actual communication
 
 ### What's SIMULATED (Testing Only)
 
@@ -99,7 +99,7 @@ These are TEST scripts that simulate device behavior:
 To control ACTUAL physical devices, you need:
 
 ❌ **Zigbee2MQTT Bridge** - Connects Zigbee devices to MQTT
-❌ **Real Device Control Scripts** - Now created! (`src/control_real_lights.py`, `src/monitor_real_motion.py`, `src/real_automation.py`)
+❌ **Real Device Control Scripts** (`src/control_real_lights.py`, `src/monitor_real_motion.py`, `src/real_automation.py`)
 
 **Status:** 🔧 Requires Zigbee2MQTT configuration (see below)
 
@@ -107,10 +107,10 @@ To control ACTUAL physical devices, you need:
 
 | Component | Status | Innovation Fair Ready? |
 |-----------|--------|----------------------|
-| Security Framework | ✅ REAL | YES |
-| Encryption/Auth/ACLs | ✅ REAL | YES |
-| Anomaly Detection | ✅ REAL | YES |
-| Web Dashboard | ✅ REAL | YES |
+| Security Framework | REAL | YES |
+| Encryption/Auth/ACLs | REAL | YES |
+| Anomaly Detection | REAL | YES |
+| Web Dashboard | REAL | YES |
 | **Device Control** | 🔧 **NEEDS ZIGBEE2MQTT** | **SETUP REQUIRED** |
 | **Real Automation** | 🔧 **NEEDS ZIGBEE2MQTT** | **SETUP REQUIRED** |
 
