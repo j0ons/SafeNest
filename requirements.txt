@@ -1,0 +1,9 @@
+# SafeNest Python Dependencies
+#
+# Install with: pip3 install -r requirements.txt
+
+# MQTT client library
+paho-mqtt>=1.6.1
+
+# No other external dependencies required!
+# SafeNest uses only Python standard library for everything else.
